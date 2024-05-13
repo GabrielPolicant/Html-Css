@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+/*Configuraçoes Globais no nosso codigo*/
+*{
+    margin: 10px;
+    padding: 10px;
+
+    min-width:280px;
+    max-width:800px;
+    margin: auto;
+}
+
+/*Raiz do Site Aqui podemos definir nossas variaveis que iremos usar no site*/
+:root{
+    --cor0:#c5ebd6;
+    --cor1:#83ea1d;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+
+    --fontpadrao:Arial, Helvetica, sans-serif;
+    --fontdestaque:'Bebas Neue', sans-serif;
+    --fontandroid: 'Android', cursive;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--fontpadrao);
+    text-align: justify;
+}
+
+header{
+    background-color: var(--cor4);
+}
+
+header > h1{
+    color: white;
+    font-family: var(--fontdestaque);
+}
+
+header > p{
+    color: white;
+}
+
+nav{
+    background-color: var(--cor5);
+}
+
+main{
+    background-color: white;
+    border-radius: 5px;
+}
+
+main h1{
+    color: var(--cor5);
+    font-family: var(--fontandroid);
+}
+
+main h2{
+    font-family: var(--fontandroid);
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+}

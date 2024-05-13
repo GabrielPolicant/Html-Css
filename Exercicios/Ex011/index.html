@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML4</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abri essa imagem em varios dispositivos diferentes ou apenas aumente e diminua o Zoom da Imagem </p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+    <h1>Media</h1>
+    <p>Aqui iremos colocar um audio em nosso site</p>
+    <audio src="media/El Billete - Edgar Lopez and Quincas Moreira.mp3"controls autoplay></audio>
+    <audio preload="metadata" autoplay controls>
+        <source src="media/El Billete - Edgar Lopez and Quincas Moreira.mp3" type="audio/mpeg">
+        <source src="media/El Billete - Edgar Lopez and Quincas Moreira.ogg" type="audio/ogg">
+        <source src="media/El Billete - Edgar Lopez and Quincas Moreira.wav" type="audio/wav">
+        <p>Infelismente seu navegador nao consegue reproduzir audio <a href="media/El Billete - Edgar Lopez and Quincas Moreira.mp3">Clique aqui para poder baixar o audio no arquivo de MP3</a></p>
+    </audio>
+    <h1>Video</h1>
+    <p>Vamos colocar um video em pona pagina de HTML5</p>
+    
+</body>
+</html>
